@@ -3,9 +3,9 @@ micronaut:
     name: micronaut-crud
 datasources:
   default:
-    url: jdbc:mysql://127.0.0.1:3306/mn_playground
-    username: root
-    password: SQL2023!
+    url: jdbc:mysql://127.0.0.1:3306/${MYSQL_DATABASE}
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
 flyway:
   datasources:
